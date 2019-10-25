@@ -1,5 +1,5 @@
 {
-  "name": "angular-admin-lte-demo",
+  "name": "FortniteStatsMonitoring",
   "version": "2.0.1",
   "keywords": [
     "angular",
@@ -25,13 +25,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mledour/angular-admin-lte.git"
-  },
   "author": {
-    "name": "Mik@",
-    "email": "michael.ledour@gmail.com"
+    "name": "Teyz",
+    "email": "contact.teyz@gmail.com"
   },
   "license": "MIT",
   "private": false,
@@ -53,6 +49,7 @@
     "ionicons": "^2.0.1",
     "prismjs": "^1.8.4",
     "rxjs": "^6.4.0",
+    "typescript": "^3.1.6",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
@@ -78,8 +75,7 @@
     "ts-node": "~5.0.1",
     "tsickle": ">=0.25.5",
     "tslib": "^1.7.1",
-    "tslint": "~5.12.1",
-    "typescript": "~3.2.4"
+    "tslint": "~5.12.1"
   },
   "resolutions": {
     "terser": "3.8.1"

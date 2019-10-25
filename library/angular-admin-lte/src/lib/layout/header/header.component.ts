@@ -54,7 +54,7 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   private subscriptions = [];
 
   @Input() isSidebarLeftToggle = true;
-  @Input() isSidebarRightToggle = true;
+  @Input() isSidebarRightToggle = false;
   @Input() logoLink: string | any[] = '/';
 
   @ContentChild(HeaderLogoComponent) public headerLogoComponent: HeaderLogoComponent;

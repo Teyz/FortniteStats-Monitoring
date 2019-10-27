@@ -1,0 +1,32 @@
+.nav-tabs-custom>.nav-tabs>li.header {
+    color: #fff;
+}
+
+.tab-content {
+    background-color: #232323;
+}
+
+ul {
+    background-color: #232323;
+}
+
+.nav-tabs-custom>.nav-tabs {
+    margin: 0;
+    border-bottom-color: #1c1c1c;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+ul.nav.nav-tabs.pull-right {
+    border-top-left-radius: 5pt 5pt;
+    border-top-right-radius: 5pt 5pt;
+}
+
+.tab-content.no-padding {
+    border-bottom-left-radius: 5pt 5pt;
+    border-bottom-right-radius: 5pt 5pt;
+}
+
+.nav-tabs-custom{
+    background-color: #232323;
+}

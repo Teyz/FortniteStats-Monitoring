@@ -10,6 +10,7 @@ export const adminLteConf = {
   // layout: 'normal',
   sidebarLeftMenu: [
     {label: 'MONITORING', separator: true},
+    {label: 'Dashboard', route: 'twitter', iconClasses: 'fa fa-twitter', pullRights: [{text: 'New', classes: 'label pull-right bg-red'}]},
     {label: 'Get Started', route: '/', iconClasses: 'fa fa-road', pullRights: [{text: 'New', classes: 'label pull-right bg-green'}]},
     {label: 'Layout', iconClasses: 'fa fa-th-list', children: [
         {label: 'Configuration', route: 'layout/configuration'},

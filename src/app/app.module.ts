@@ -9,7 +9,6 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from 'angular-admin-lte';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { TwitterComponent } from './twitter/twitter.component';
@@ -25,7 +24,6 @@ import { TwitterComponent } from './twitter/twitter.component';
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
     TwitterComponent
   ],
   bootstrap: [AppComponent]

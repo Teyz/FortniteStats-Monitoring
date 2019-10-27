@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { TwitterComponent } from './twitter/twitter.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { StatusComponent } from './status/status.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { TwitterComponent } from './twitter/twitter.component';
   ],
   declarations: [
     AppComponent,
-    TwitterComponent
+    TwitterComponent,
+    StatisticsComponent,
+    StatusComponent
   ],
   bootstrap: [AppComponent]
 })

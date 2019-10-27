@@ -1,6 +1,6 @@
 export const adminLteConf = {
   skin: 'red',
-  // isSidebarLeftCollapsed: false,
+  isSidebarLeftCollapsed: true,
   // isSidebarLeftExpandOnOver: false,
   // isSidebarLeftMouseOver: false,
   // isSidebarLeftMini: true,
@@ -9,8 +9,10 @@ export const adminLteConf = {
   // isSidebarRightOverContent: true,
   // layout: 'normal',
   sidebarLeftMenu: [
+    {label: 'Status', route: 'status', iconClasses: 'fa fa-terminal'},
     {label: 'MONITORING', separator: true},
-    {label: 'Dashboard', route: 'twitter', iconClasses: 'fa fa-twitter', pullRights: [{text: 'New', classes: 'label pull-right bg-red'}]},
-    {label: 'Statistics', separator: true}
+    {label: 'Twitter', route: 'twitter', iconClasses: 'fa fa-twitter'},
+    {label: 'Statistics', separator: true},
+    {label: 'Statistics', route: 'statistics', iconClasses: 'fa fa-globe'}
   ]
 };

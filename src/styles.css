@@ -80,19 +80,19 @@ body {
 h1 {
   font-family: 'Nexa Black';
   font-size: 25px;
-  color: white;
+  color: #b8c7ce;
 }
 
 h2 {
   font-family: 'Nexa Black';
   font-size: 20px;
-  color: white;
+  color: #b8c7ce;
 }
 
 p {
   font-family: 'Nexa';
   font-size: 16px;
-  color: white;
+  color: #b8c7ce;
 }
 
 .user-panel>.info>a {

@@ -112,7 +112,7 @@ p {
 }
 
 .main-footer strong {
-  color: #fff;
+  color: #b8c7ce;
 }
 
 .main-footer>strong>a {
@@ -127,7 +127,7 @@ p {
 
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs>li.active>a, .control-sidebar-dark .nav-tabs.control-sidebar-tabs>li.active>a:hover, .control-sidebar-dark .nav-tabs.control-sidebar-tabs>li.active>a:focus, .control-sidebar-dark .nav-tabs.control-sidebar-tabs>li.active>a:active {
   background: #1c1c1c;
-  color: #fff;
+  color: #b8c7ce;
 }
 
 .control-sidebar-heading {
@@ -135,17 +135,17 @@ p {
 }
 
 .list-unstyled a {
-  color: #fff !important;
+  color: #b8c7ce !important;
 }
 
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs>li>a {
   background: #363535;
-  color: #fff;
+  color: #b8c7ce;
 }
 
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs>li>a:hover {
   background: #444444;
-  color: #fff;
+  color: #b8c7ce;
 }
 
 .main-footer {
@@ -169,7 +169,7 @@ p {
 }
 
 .skin-red .sidebar-menu>li.header {
-  color: #fff;
+  color: #b8c7ce;
   background: #282828;
 }
 
@@ -178,7 +178,7 @@ p {
 }
 
 .skin-red .sidebar-menu>li:hover>a, .skin-red .sidebar-menu>li.active>a, .skin-red .sidebar-menu>li.menu-open>a {
-  color: #ffffff;
+  color: #b8c7ce;
   background: #363535;
 }
 
@@ -192,7 +192,7 @@ p {
 }
 
 .skin-red .main-header .navbar .sidebar-toggle:hover {
-  color: #f6f6f6;
+  color: #b8c7ce;
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -203,7 +203,7 @@ p {
 .box-footer {
   background-color: #1c1c1c;
   border-top: 1px solid #1f1f1f;
-  color: white;
+  color:#b8c7ce;
 }
 
 .box .border-right {
@@ -231,7 +231,7 @@ p {
 
 .info-box {
   background: #1c1c1c;
-  color: white;
+  color:#b8c7ce;
 }
 
 .bg-fade {
@@ -259,4 +259,17 @@ p {
 
 .box .overlay, .overlay-wrapper .overlay {
   border-radius: 0px;
+}
+
+.text-online{
+  color: #009aff;
+}
+
+.text-offline{
+  color: #dd4b39;
+}
+
+.bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
+  background-color: #dd4b39 !important;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(215, 57, 37, 0.4) 50%, transparent, transparent) !important;
 }

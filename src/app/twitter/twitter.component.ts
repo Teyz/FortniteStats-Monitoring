@@ -21,6 +21,7 @@ export class TwitterComponent implements OnInit {
 
   postTweet(text){
     console.log(text);
+    this.FNRBapi.postTweet(text);
   }
 
 }

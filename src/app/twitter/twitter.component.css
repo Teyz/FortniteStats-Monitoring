@@ -293,3 +293,10 @@ ul.nav.nav-tabs.pull-right {
       opacity: 1;
     }
   }
+
+.count_tweet {
+    bottom: -1px;
+    position: absolute;
+    right: 30px;
+    color: #666666;
+  }

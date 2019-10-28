@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LayoutModule } from 'angular-admin-lte';
@@ -17,7 +17,8 @@ describe('AppComponent', () => {
         CoreModule,
         LayoutModule.forRoot(adminLteConf),
         LoadingPageModule, MaterialBarModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
       ],
       declarations: [
         AppComponent

@@ -8,9 +8,12 @@ import { ApiService } from './twitter.service';
 })
 export class TwitterComponent implements OnInit {
 
+  private text: string;
+
   constructor(public FNRBapi: ApiService) { }
 
   ngOnInit() {
+    this.text='';
     this.FNRBapi.getStatus().subscribe((data) => {
       console.log(data);
     });

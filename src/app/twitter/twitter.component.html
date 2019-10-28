@@ -14,8 +14,10 @@
       </ul>
       <div class="tab-content no-padding">
         <div class="wrap-input1 validate-input" data-validate="Message is required">
-          <textarea class="input1" name="message" placeholder="Message"></textarea>
+          <textarea maxlength="280" class="input1" name="message" placeholder="Message" [(ngModel)]="text">
+          </textarea>
           <span class="shadow-input1"></span>
+          <p class="count_tweet">{{text.length}} /280</p>
         </div>
         <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 75px;">
           <div class="container-contact1-form-btn">

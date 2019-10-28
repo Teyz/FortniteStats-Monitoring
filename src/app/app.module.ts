@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { adminLteConf } from './admin-lte.conf';
 
@@ -22,7 +23,8 @@ import { StatusComponent } from './status/status.component';
     AppRoutingModule,
     CoreModule,
     LayoutModule.forRoot(adminLteConf),
-    LoadingPageModule, MaterialBarModule
+    LoadingPageModule, MaterialBarModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,

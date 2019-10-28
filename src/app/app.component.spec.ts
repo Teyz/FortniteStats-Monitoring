@@ -7,6 +7,7 @@ import { LayoutModule } from 'angular-admin-lte';
 
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { adminLteConf } from './admin-lte.conf';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -15,7 +16,8 @@ describe('AppComponent', () => {
         RouterTestingModule,
         CoreModule,
         LayoutModule.forRoot(adminLteConf),
-        LoadingPageModule, MaterialBarModule
+        LoadingPageModule, MaterialBarModule,
+        HttpClientModule
       ],
       declarations: [
         AppComponent

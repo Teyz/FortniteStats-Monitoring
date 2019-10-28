@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from './twitter.service';
 
 @Component({
   selector: 'app-twitter',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwitterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public FNRBapi: ApiService) { }
 
   ngOnInit() {
+    this.FNRBapi.getStatus().subscribe((data) => {
+      console.log(data);
+    });
   }
 
 }

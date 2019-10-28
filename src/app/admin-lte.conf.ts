@@ -3,7 +3,7 @@ export const adminLteConf = {
   isSidebarLeftCollapsed: true,
   // isSidebarLeftExpandOnOver: false,
   // isSidebarLeftMouseOver: false,
-  // isSidebarLeftMini: true,
+  isSidebarLeftMini: true,
   // sidebarRightSkin: 'dark',
   // isSidebarRightCollapsed: true,
   // isSidebarRightOverContent: true,

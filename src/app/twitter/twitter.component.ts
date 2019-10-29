@@ -9,6 +9,7 @@ import { ApiService } from './twitter.service';
 export class TwitterComponent implements OnInit {
 
   private text: string;
+  private actionText: string = 'test';
 
   constructor(public FNRBapi: ApiService) { }
 
@@ -21,7 +22,10 @@ export class TwitterComponent implements OnInit {
 
   postTweet(text){
     console.log(text);
-    this.FNRBapi.postTweet(text);
+    this.FNRBapi.postTweet(text).subscribe((data) => {
+      this.text = '';
+      this.actionText = 'Sucess';
+      console.log(data);
+    });
   }
-
 }

@@ -293,8 +293,47 @@ textarea.input1+.shadow-input1 {
 }
 
 .action_message {
-  bottom: 50%;
+  bottom: 30%;
   position: absolute;
   left: 30px;
   color: #666666;
+}
+
+.sucess {
+  color: #00c0ef;
+}
+
+.error {
+  color: #fe382d;
+}
+
+.tweet {
+  background-color: #1c1c1c;
+  height: 100px;
+  width: 95%;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user_logo {
+  position: absolute;
+  width: 50px;
+  left: 50px;
+  top: 45px;
+}
+
+.user_tweet {
+  position: absolute;
+  left: 120px;
+  top: 40px;
+  width: 530px;
+  word-wrap: break-word;
+  line-height: 12px;
+  font-size: 14px;
 }

@@ -5,7 +5,12 @@
         <li class="pull-left header"><i class="fa fa-twitter"></i> Last tweet of @FNBRStats</li>
       </ul>
       <div class="tab-content no-padding">
-        <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 600px;"></div>
+        <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 700px;">
+          <div class="tweet" *ngFor="let items of lastTweet.data">
+            <img src="../../assets/img/FNBRStats.png" class="img-circle user_logo" alt="">
+            <p class="user_tweet">{{items.text}}</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="nav-tabs-custom">
@@ -14,13 +19,14 @@
       </ul>
       <div class="tab-content no-padding">
         <div class="wrap-input1 validate-input" data-validate="Message is required">
-          <textarea maxlength="280" class="input1" name="message" placeholder="Message" [(ngModel)]="text">
+          <textarea maxlength="288" class="input1" name="message" placeholder="Message" [(ngModel)]="text">
           </textarea>
           <span class="shadow-input1"></span>
           <p class="count_tweet">{{text.length}} /280</p>
         </div>
-        <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 75px;">
-          <p class="action_message">{{actionText}}</p>
+        <div class="tab-pane active" id="revenue-chart" style="position: relative; height: 75px;">
+          <p class="action_message sucess" *ngIf="action_classes.status == 200">Sucess ! </p>
+          <p class="action_message error" *ngIf="action_classes.status == 403">Error ! Please try again.</p>
           <div class="container-contact1-form-btn">
             <button class="contact1-form-btn" (click)="postTweet(text)">
                 Tweet <i class="fa fa-comments fa-lg"></i>
@@ -36,7 +42,12 @@
         <li class="pull-left header"><i class="fa fa-twitter"></i> Last tweets with #FortniteStats</li>
       </ul>
       <div class="tab-content no-padding">
-        <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 1000px;"></div>
+        <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 1000px;">
+          <div class="tweet" *ngFor="let items of allTweet.data.statuses">
+            <img src="{{items.user.profile_image_url}}" class="img-circle user_logo" alt="">
+            <p class="user_tweet">{{items.text}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

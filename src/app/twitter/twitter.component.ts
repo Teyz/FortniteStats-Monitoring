@@ -9,23 +9,33 @@ import { ApiService } from './twitter.service';
 export class TwitterComponent implements OnInit {
 
   private text: string;
-  private actionText: string = 'test';
+  private actionText: string;
+  private action_classes = {};
+  private lastTweet = {};
+  private allTweet = {};
 
   constructor(public FNRBapi: ApiService) { }
 
   ngOnInit() {
     this.text='';
-    this.FNRBapi.getStatus().subscribe((data) => {
-      console.log(data);
+
+    this.FNRBapi.getLastTweet().subscribe((data) => {
+      this.lastTweet = data;
+    });
+
+    this.FNRBapi.getAllTweet().subscribe((data) => {
+      this.allTweet = data;
     });
   }
 
   postTweet(text){
-    console.log(text);
     this.FNRBapi.postTweet(text).subscribe((data) => {
+      this.action_classes = data;
       this.text = '';
-      this.actionText = 'Sucess';
-      console.log(data);
+      setTimeout(() => {
+        this.actionText = '';  
+        this.action_classes = '';
+      }, 5000);
     });
   }
 }

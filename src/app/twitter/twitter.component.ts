@@ -24,7 +24,6 @@ export class TwitterComponent implements OnInit {
     });
 
     this.FNRBapi.getAllTweet().subscribe((data) => {
-      console.log(data);
       this.allTweet = data;
     });
   }

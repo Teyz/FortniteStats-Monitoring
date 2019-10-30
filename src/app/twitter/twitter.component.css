@@ -328,7 +328,7 @@ textarea.input1+.shadow-input1 {
   top: 45px;
 }
 
-.user_tweet {
+/* .user_tweet {
   position: absolute;
   left: 120px;
   top: 40px;
@@ -336,7 +336,7 @@ textarea.input1+.shadow-input1 {
   word-wrap: break-word;
   line-height: 12px;
   font-size: 14px;
-}
+} */
 
 .user_tweet_all {
   position: absolute;

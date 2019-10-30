@@ -337,3 +337,21 @@ textarea.input1+.shadow-input1 {
   line-height: 12px;
   font-size: 14px;
 }
+
+.user_tweet_all {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  font-size: 14px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user_tweet_all_reply{
+  color: #666666;
+  position: absolute;
+  right: 80px;
+  top: 60px;
+}

@@ -7,10 +7,11 @@
       <img src="assets/img/FNBRStatsOff.png" class="img-circle" alt="Logo @FNBRStats">
     </div>
   </ng-template>
-  <!-- <div class="pull-left info">
-    <p>@FNBRStats - Bot {{status.status}}</p>
-    <a href="https://twitter.com/FNBRStats" target="_blanck"><i class="fa fa-circle text-offline"></i> Online</a>
-  </div> -->
+  <div class="pull-left info">
+    <p>@FNBRStats - Bot</p>
+    <a href="https://twitter.com/FNBRStats" target="_blanck" *ngIf="status.status"><i class="fa fa-circle text-online"></i> Online</a>
+    <a href="https://twitter.com/FNBRStats" target="_blanck" *ngIf="!status.status"><i class="fa fa-circle text-offline"></i> Offline</a>
+  </div>
 </div>
 <!-- <form action="#" method="get" class="sidebar-form">
   <div class="input-group">

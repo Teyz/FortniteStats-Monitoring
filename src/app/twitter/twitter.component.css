@@ -130,10 +130,9 @@ textarea.input1+.shadow-input1 {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  border: 0;
+  flex-direction: row-reverse;
   margin-right: 20px;
+  border: 0;
 }
 
 .contact1-form-btn {

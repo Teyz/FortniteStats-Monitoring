@@ -1,48 +1,17 @@
-[![Build Status](https://travis-ci.org/mledour/angular-admin-lte.svg?branch=master)](https://travis-ci.org/mledour/angular-admin-lte)
-[![npm version](https://badge.fury.io/js/angular-admin-lte.svg)](https://badge.fury.io/js/angular-admin-lte)
+# FortniteStats
 
-# angular-admin-lte
+A twitter bot allowing users to retrieve their Fortnite statistics. Every day the shop of the day is tweeted.
 
-Admin-lte implementation for Angular 4+
+## Getting Started
 
-## Doc & Demo
-[https://mledour.github.io/angular-admin-lte/branches/master](https://mledour.github.io/angular-admin-lte/branches/master)
+### Get Fortnite Stats 
 
+To use the bot, you must tweet: #FortniteStats {name} {pc/xb1/psn}
 
-## Installation
+### Fortnite Status 
 
-To install this library, run:
+Every 2 minutes, the bot checks the status of the servers, if the servers go offline, the bot tweet and vice versa.
 
-```bash
-$ npm install angular-admin-lte --save
-```
+## Authors
 
-## Install demo
-```bash
-$ git clone git://github.com/mledour/angular-admin-lte
-$ cd angular-admin-lte
-$ npm install
-```
-
-## Run demo
-```bash
-$ ng serve
-```
-
-## Build demo
-```bash
-$ ng build --prod
-```
-
-## Build dist
-```bash
-$ npm run build:lib
-```
-
-## Dependencies
-
-* admin-lte-css
-
-## Todos
-
-* Vertical tabs
+* **Bastien 'Teyz' Rigaud** - *Initial work* - [Twitter](https://twitter.com/FrTeyz)
